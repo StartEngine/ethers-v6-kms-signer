@@ -1,0 +1,53 @@
+{
+  "name": "@startengine/ethers-v6-kms-signer",
+  "version": "1.0.0",
+  "description": "Ethers v6 signer implementation using AWS KMS for secure blockchain transaction signing. Supports IAM roles, credential chains, and EIP-712 typed data signing for EVM-compatible chains.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "keywords": [
+    "ethers",
+    "ethereum",
+    "aws",
+    "kms",
+    "signer",
+    "blockchain",
+    "evm",
+    "web3"
+  ],
+  "author": "StartEngine",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StartEngine/ethers-v6-kms-signer.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.817.0",
+    "@aws-sdk/credential-providers": "^3.936.0",
+    "asn1.js": "^5.4.1",
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  }
+}

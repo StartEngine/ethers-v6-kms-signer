@@ -1,0 +1,30 @@
+# Source files
+src/
+tsconfig.json
+.eslintrc.json
+
+# Tests
+test/
+*.spec.ts
+*.test.ts
+
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# Build artifacts
+*.tsbuildinfo
+
+# Documentation (except README)
+docs/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+azure-pipelines.yml
