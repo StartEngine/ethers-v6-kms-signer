@@ -6,6 +6,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "src",
+    "tsconfig.json",
     "README.md"
   ],
   "scripts": {
